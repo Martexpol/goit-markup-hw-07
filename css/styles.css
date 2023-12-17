@@ -593,7 +593,7 @@ a .nav-link,
 	transform: translateY (100%);
 }
 
-.portfolio-card-p {
+.portfolio-card-p::after {
 	content: "";
 	position: absolute;
 	background-color: var(--iris);
