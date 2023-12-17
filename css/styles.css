@@ -651,8 +651,8 @@ a .nav-link,
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--navy-blue);
-	opacity: 0.4;
+	background-color: rgba(46, 47, 66, 0.4);
+
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -675,6 +675,7 @@ a .nav-link,
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	transform: translate(-50%, -50%) scale(1);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	opacity: 1;
 }
 
 .button-x {
@@ -707,6 +708,7 @@ a .nav-link,
 }
 
 .svg-x {
+	fill: var(--navy-blue);
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
