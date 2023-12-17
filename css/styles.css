@@ -7,6 +7,8 @@
 	--cornflower: #e7e9fc;
 	--light-slate: #8e8f99;
 	--green: #31d0aa;
+	--navy-blue-modal: #2e2f42;
+	--diary: #fcfcfc;
 }
 * {
 	margin: 0;
@@ -642,4 +644,36 @@ a .nav-link,
 	background-color: var(--navy-blue);
 	color: white;
 	padding: 188px 0;
+}
+
+/* modal */
+.backdrop {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--navy-blue-modal);
+	opacity: 0.4;
+}
+
+.modal {
+	width: 408px;
+	height: 584px;
+	background-color: var(--diary);
+	border: 1px solid var(--light-slate);
+	border-radius: 4px;
+	padding-top: 80px;
+}
+
+.button-x {
+	width: 24px;
+	height: 24px;
+	background-color: var(--diary);
+	color: var(--navy-blue);
+	border: 1px solid var(--light-slate);
+	border-radius: 50%;
+}
+.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
 }
