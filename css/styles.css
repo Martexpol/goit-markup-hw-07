@@ -208,7 +208,7 @@ a .nav-link,
 
 .nav-link-active:after {
 	color: var(--ocean);
-	background-image: url(../images/hover.svg);
+	/* background-image: url(../images/hover.svg); */
 	content: "";
 	position: absolute;
 	left: 0;
