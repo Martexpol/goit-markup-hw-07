@@ -185,7 +185,8 @@ img {
 
 .nav-link {
 	text-decoration: none;
-	color: var(--navy-blue);
+	/* color: var(--navy-blue); */
+	color: var(--ocean);
 	font-family: Roboto, sans-serif;
 	font-weight: 500;
 	font-size: 16px;
