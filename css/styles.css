@@ -194,7 +194,8 @@ img {
 	letter-spacing: 0.02em;
 	list-style-type: none;
 	padding: 24px 0 24px;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	position: relative;
 }
 a .nav-link,
@@ -209,18 +210,19 @@ a .nav-link,
 
 .nav-link-active {
 	color: var(--ocean);
+	display: block;
 }
 
 .nav-link-active::after {
 	color: var(--ocean);
-	/* background-image: url(../images/hover.svg); */
+	border-bottom: 4px solid var(--ocean);
 	content: "";
 	position: absolute;
-	left: 0;
+	/* left: 0;
 	bottom: -1px;
-	height: 4px;
-	background-color: #404bbf;
-	border-radius: 2px;
+	height: 4px; */
+	/* background-color: #404bbf;
+	border-radius: 2px; */
 }
 
 .address-list {
