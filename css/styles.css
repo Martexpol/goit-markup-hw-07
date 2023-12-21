@@ -240,6 +240,7 @@ hr.active {
 	border-radius: 2px;
 	content: "";
 	position: absolute;
+	box-shadow: none;
 }
 
 .address-list {
