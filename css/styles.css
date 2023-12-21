@@ -220,8 +220,10 @@ a .nav-link,
 	color: var(--ocean);
 	content: "";
 	position: absolute;
-	background-color: var(--ocean);
 	bottom: -1px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: var(--ocean);
 }
 
 .active {
@@ -239,14 +241,14 @@ a .nav-link,
 	display: block;
 	border-style: solid;
 	border-top: 4px;
-	background-color: var(--ocean);
-	border-radius: 2px;
-	height: 4px;
 	content: "";
 	position: absolute;
 	box-shadow: none;
 	position: absolute;
 	bottom: -1px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: var(--ocean);
 }
 
 .address-list {
