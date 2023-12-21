@@ -222,7 +222,7 @@ a .nav-link,
 	position: absolute;
 }
 
-hr.active {
+.active {
 	border-style: solid;
 	border-top: 4px;
 	background-color: var(--ocean);
@@ -233,7 +233,8 @@ hr.active {
 	box-shadow: none;
 }
 
-.nav-link-active::after hr.active {
+.nav-link-active::after .active {
+	display: block;
 	border-style: solid;
 	border-top: 4px;
 	background-color: var(--ocean);
@@ -241,6 +242,7 @@ hr.active {
 	content: "";
 	position: absolute;
 	box-shadow: none;
+	position: absolute;
 }
 
 .address-list {
