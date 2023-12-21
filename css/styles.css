@@ -220,6 +220,8 @@ a .nav-link,
 	color: var(--ocean);
 	content: "";
 	position: absolute;
+	background-color: var(--ocean);
+	bottom: -1px;
 }
 
 .active {
