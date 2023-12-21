@@ -211,18 +211,33 @@ a .nav-link,
 .nav-link-active {
 	color: var(--ocean);
 	display: block;
+	flex-direction: column;
+	padding: 24px 0 20px;
 }
 
 .nav-link-active::after {
 	color: var(--ocean);
-	border-bottom: 4px solid var(--ocean);
+
 	content: "";
 	position: absolute;
-	/* left: 0;
-	bottom: -1px;
-	height: 4px; */
-	/* background-color: #404bbf;
-	border-radius: 2px; */
+}
+
+hr.active {
+	border-style: solid;
+	border-top: 4px;
+	background-color: var(--ocean);
+	border-radius: 2px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: none;
+}
+
+.nav-link-active::after hr.active {
+	/* border-top: 4px rounded var(--ocean); */
+	border-radius: 2px;
+	content: "";
+	position: absolute;
 }
 
 .address-list {
