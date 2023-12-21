@@ -234,7 +234,9 @@ hr.active {
 }
 
 .nav-link-active::after hr.active {
-	/* border-top: 4px rounded var(--ocean); */
+	border-style: solid;
+	border-top: 4px;
+	background-color: var(--ocean);
 	border-radius: 2px;
 	content: "";
 	position: absolute;
