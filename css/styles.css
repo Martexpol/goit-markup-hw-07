@@ -219,13 +219,14 @@ a .nav-link,
 .nav-link-active::after {
 	color: var(--ocean);
 	content: "";
-	/* position: absolute; */
+	position: absolute;
 	bottom: -1px;
 	height: 4px;
 	border-radius: 2px;
 	background-color: var(--ocean);
 	width: 100%;
 	display: inline-block;
+	left: 0;
 }
 
 hr {
