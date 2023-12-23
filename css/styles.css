@@ -255,7 +255,7 @@ hr {
 	position: absolute;
 	box-shadow: none;
 	position: absolute;
-	bottom: -1px;
+	bottom: -3px;
 	height: 4px;
 	border-radius: 2px;
 	background-color: var(--ocean);
