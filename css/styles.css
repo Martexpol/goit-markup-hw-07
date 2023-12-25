@@ -946,8 +946,8 @@ hr {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-box:hover .svg-modal,
-.input-box:focus .svg-modal,
+.input-box:hover + .input-modal .svg-modal,
+.input-box:focus + .input-modal .svg-modal,
 .input-box:active .svg-modal {
 	fill: var(--iris);
 }
