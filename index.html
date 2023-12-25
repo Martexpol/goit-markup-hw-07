@@ -430,19 +430,91 @@
 						</li>
 					</ul>
 				</div>
+				<!-- subcribe form -->
+				<div class="footer-box">
+					<p class="footer-text-media">Subscribe</p>
+					<form name="subscribe-form" autocomplete="on" novalidate>
+						<input
+							type="email"
+							name="email"
+							placeholder="E-mail"
+							class="input-form" /><button type="submit" class="subscribe-btn">
+							Subscribe
+						</button>
+					</form>
+				</div>
 			</div>
 		</footer>
-
+		<!-- modal -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<button class="button-x" type="button" data-modal-close>
-					<svg width="8" height="8" class="svg-x">
-						<use href="./images/icons.svg#icon-x"></use>
-					</svg>
-				</button>
+				<div>
+					<button class="button-x" type="button" data-modal-close>
+						<svg width="8" height="8" class="svg-x">
+							<use href="./images/icons.svg#icon-x"></use>
+						</svg>
+					</button>
+				</div>
+				<div>
+					<form class="form-modal">
+						<h1 class="header-modal">
+							Leave your contacts and we will call you back
+						</h1>
+						<label for="user-name" class="input-label">Name</label>
+						<div class="input-container-modal">
+							<svg width="13" height="13">
+								<use href="./images/icons.svg#icon-user"></use>
+							</svg>
+							<input
+								type="text"
+								name="name"
+								id="user-name"
+								class="input-modal" />
+						</div>
+						<label for="user-phone" class="input-label">Phone</label>
+						<div class="input-container-modal">
+							<svg width="13" height="13">
+								<use href="./images/icons.svg#icon-phone"></use>
+							</svg>
+							<input
+								type="tel"
+								name="phone"
+								id="user-phone"
+								class="input-modal" />
+						</div>
+						<label for="user-email" class="input-label">Email</label>
+						<div class="input-container-modal">
+							<svg width="13" height="13">
+								<use href="./images/icons.svg#icon-mail"></use>
+							</svg>
+							<input
+								type="email"
+								name="email"
+								id="user-email"
+								class="input-modal" />
+						</div>
+						<label for="Comment" class="input-label">Comment</label>
+						<input
+							type="textarea"
+							name="Comment"
+							id="Comment"
+							class="input-modal" />
+
+						<input
+							type="checkbox"
+							name="terms-accept"
+							id="terms-accept"
+							class="checkbox-modal hidden"
+							required />
+						<label for="terms-accept" class="input-label"
+							>I accept the terms and conditions of the
+							<a href="" class="modal-link">Privacy Policy</a></label
+						>
+						<button type="submit" class="send-button">Send</button>
+					</form>
+				</div>
 			</div>
 		</div>
-
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
