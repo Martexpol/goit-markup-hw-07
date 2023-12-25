@@ -915,11 +915,6 @@ hr {
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
-	color: var(--iris);
-}
-
 .input-container-modal {
 	color: var(--navy-blue);
 	display: inline-block;
@@ -931,10 +926,11 @@ hr {
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	gap: 8px;
 }
-.input-container-modal:hover,
-.input-container-modal:focus,
-.input-container-modal:active {
+.input-modal:hover + .svg-modal,
+.input-modal:focus + .svg-modal,
+.input-modal:active + .svg-modal {
 	color: var(--iris);
+	fill: var(--iris);
 }
 
 .svg-modal {
@@ -945,12 +941,18 @@ hr {
 	left: 16px;
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* 
 .input-box:hover + .input-modal .svg-modal,
 .input-box:focus + .input-modal .svg-modal,
 .input-box:active .svg-modal {
 	fill: var(--iris);
+	border-color: var(--iris);
 }
+
+.svg-modal:hover,
+.svg-modal:focus {
+	fill: var(--iris);
+} */
 
 .terms-container {
 	display: flex;
