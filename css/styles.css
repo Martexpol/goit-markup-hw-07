@@ -871,7 +871,7 @@ hr {
 
 .input-container-modal {
 	color: var(--navy-blue);
-	fill: var(--navy-blue);
+
 	display: inline-block;
 	align-content: center;
 	margin-left: 16px;
@@ -880,5 +880,15 @@ hr {
 .input-container-modal:focus,
 .input-container-modal:active {
 	color: var(--iris);
+	fill: var(--iris);
+}
+
+.svg-modal {
+	fill: var(--navy-blue);
+}
+
+.input-container-modal:hover .svg-modal,
+.input-container-modal:focus .svg-modal,
+.input-container-modal:active .svg-modal {
 	fill: var(--iris);
 }
