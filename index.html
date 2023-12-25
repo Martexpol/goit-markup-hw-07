@@ -440,6 +440,9 @@
 							placeholder="E-mail"
 							class="input-form" /><button type="submit" class="subscribe-btn">
 							Subscribe
+							<svg width="24" height="24" class="svg-subscribe">
+								<use href="./images/icons.svg#icon-send"></use>
+							</svg>
 						</button>
 					</form>
 				</div>
@@ -498,18 +501,20 @@
 							type="textarea"
 							name="Comment"
 							id="Comment"
-							class="input-modal" />
-
-						<input
-							type="checkbox"
-							name="terms-accept"
-							id="terms-accept"
-							class="checkbox-modal hidden"
-							required />
-						<label for="terms-accept" class="input-label"
-							>I accept the terms and conditions of the
-							<a href="" class="modal-link">Privacy Policy</a></label
-						>
+							class="input-modal"
+							placeholder="Text input" />
+						<div class="terms-container">
+							<input
+								type="checkbox"
+								name="terms-accept"
+								id="terms-accept"
+								class="checkbox-modal hidden"
+								required />
+							<label for="terms-accept" class="input-label"
+								>I accept the terms and conditions of the
+								<a href="" class="modal-link">Privacy Policy</a></label
+							>
+						</div>
 						<button type="submit" class="send-button">Send</button>
 					</form>
 				</div>

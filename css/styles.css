@@ -366,14 +366,15 @@ hr {
 	cursor: pointer;
 	background-color: var(--iris);
 	padding: 8px 24px;
-
 	color: white;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-btn:focus,
 .subscribe-btn:hover {
 	background-color: var(--ocean);
-	color: #ffffff;
+}
+.svg-subscribe {
+	padding-top: 8px;
 }
 
 /* index */
@@ -817,8 +818,10 @@ hr {
 	border-radius: 4px;
 	background-color: transparent;
 	margin-bottom: 4px;
+	padding-left: 34px;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	color: var(--navy-blue);
 }
-
 .input-modal:hover,
 .input-modal:active {
 	border: 1px solid var(--iris);
@@ -836,7 +839,10 @@ hr {
 	width: 16px;
 	height: 16px;
 }
-
+.checkbox-modal:checked {
+	background-image: url(../images/icons.svg#icon-check);
+	background-color: var(--ocean);
+}
 .modal-link {
 	color: var(--iris);
 }
@@ -862,11 +868,11 @@ hr {
 .send-button:focus,
 .send-button:hover {
 	background-color: var(--ocean);
-	color: #ffffff;
 }
 
 .modal-icon {
 	color: var(--navy-blue);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon:hover,
@@ -882,6 +888,7 @@ hr {
 	height: 40px;
 	position: relative;
 	left: 0;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-container-modal:hover,
 .input-container-modal:focus,
@@ -892,12 +899,20 @@ hr {
 .svg-modal {
 	fill: var(--navy-blue);
 	position: absolute;
-	top: 50%;
+	top: 14px;
 	left: 16px;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-container-modal:hover .svg-modal,
 .input-container-modal:focus .svg-modal,
 .input-container-modal:active .svg-modal {
 	fill: var(--iris);
+}
+
+.terms-container {
+	display: flex;
+	justify-content: left;
+	align-content: center;
+	margin-top: 12px;
 }
