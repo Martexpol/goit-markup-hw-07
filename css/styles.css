@@ -881,6 +881,7 @@ hr {
 	width: 100%;
 	height: 40px;
 	position: relative;
+	left: 0;
 }
 .input-container-modal:hover,
 .input-container-modal:focus,
@@ -891,7 +892,7 @@ hr {
 .svg-modal {
 	fill: var(--navy-blue);
 	position: absolute;
-	top: 150%;
+	top: 50%;
 	left: 16px;
 }
 
