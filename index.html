@@ -469,66 +469,61 @@
 						</svg>
 					</button>
 				</div>
-				<div>
-					<form class="form-modal">
-						<p class="header-modal">
-							Leave your contacts and we will call you back
-						</p>
-						<label for="user-name" class="input-label">Name</label>
-						<div class="input-container-modal">
-							<svg width="13" height="13" class="svg-modal">
-								<use href="./images/icons.svg#icon-user"></use>
-							</svg>
-							<input
-								type="text"
-								name="name"
-								id="user-name"
-								class="input-modal" />
-						</div>
-						<label for="user-phone" class="input-label">Phone</label>
-						<div class="input-container-modal">
-							<svg width="13" height="13" class="svg-modal">
-								<use href="./images/icons.svg#icon-phone"></use>
-							</svg>
-							<input
-								type="tel"
-								name="phone"
-								id="user-phone"
-								class="input-modal" />
-						</div>
-						<label for="user-email" class="input-label">Email</label>
-						<div class="input-container-modal">
-							<svg width="13" height="13" class="svg-modal">
-								<use href="./images/icons.svg#icon-mail"></use>
-							</svg>
-							<input
-								type="email"
-								name="email"
-								id="user-email"
-								class="input-modal" />
-						</div>
-						<label for="Comment" class="input-label">Comment</label>
+				<p class="header-modal">
+					Leave your contacts and we will call you back
+				</p>
+
+				<form class="form-modal">
+					<label for="user-name" class="input-label">Name</label>
+					<div class="input-container-modal">
+						<svg width="13" height="13" class="svg-modal">
+							<use href="./images/icons.svg#icon-user"></use>
+						</svg>
+						<input type="text" name="name" id="user-name" class="input-modal" />
+					</div>
+					<label for="user-phone" class="input-label">Phone</label>
+					<div class="input-container-modal">
+						<svg width="13" height="13" class="svg-modal">
+							<use href="./images/icons.svg#icon-phone"></use>
+						</svg>
 						<input
-							type="text"
-							name="Comment"
-							id="Comment"
-							class="input-modal"
-							placeholder="Text input" />
-						<div class="terms-container">
-							<input
-								type="checkbox"
-								name="terms-accept"
-								id="terms-accept"
-								class="checkbox-modal hidden"
-								required />
-							<label for="terms-accept" class="input-label"
-								>I accept the terms and conditions of the
-								<a href="" class="modal-link">Privacy Policy</a></label
-							>
-						</div>
-						<button type="submit" class="send-button">Send</button>
-					</form>
-				</div>
+							type="tel"
+							name="phone"
+							id="user-phone"
+							class="input-modal" />
+					</div>
+					<label for="user-email" class="input-label">Email</label>
+					<div class="input-container-modal">
+						<svg width="13" height="13" class="svg-modal">
+							<use href="./images/icons.svg#icon-mail"></use>
+						</svg>
+						<input
+							type="email"
+							name="email"
+							id="user-email"
+							class="input-modal" />
+					</div>
+					<label for="Comment" class="input-label">Comment</label>
+					<input
+						type="text"
+						name="Comment"
+						id="Comment"
+						class="input-modal"
+						placeholder="Text input" />
+					<div class="terms-container">
+						<input
+							type="checkbox"
+							name="terms-accept"
+							id="terms-accept"
+							class="checkbox-modal hidden"
+							required />
+						<label for="terms-accept" class="input-label"
+							>I accept the terms and conditions of the
+							<a href="" class="modal-link">Privacy Policy</a></label
+						>
+					</div>
+					<button type="submit" class="send-button">Send</button>
+				</form>
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
