@@ -885,18 +885,9 @@ hr {
 	width: 16px;
 	height: 16px;
 }
-.checkbox-modal:checked {
-	background-image: url(../images/icons.svg#icon-check);
-	background-color: var(--ocean);
-}
+
 .modal-link {
 	color: var(--iris);
-}
-
-.visually-hidden {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	appearance: none;
 }
 
 .send-button {
@@ -977,7 +968,7 @@ hr {
 .user-privacy-container {
 	margin-bottom: 24px;
 }
-.user-privacy-svg-box {
+.user-privacy-span {
 	width: 16px;
 	height: 16px;
 	border: 1px solid rgba(46, 47, 66, 0.4);
@@ -994,8 +985,14 @@ hr {
 /* .svg-checkbox {
 	background-color: transparent;
 } */
-.checkbox-modal:checked + .user-privacy-svg-box {
+.checkbox-modal:checked + .input-label .user-privacy-span {
 	background-color: var(--ocean);
 	border: none;
-	color: var(--cloud);
+	fill: var(--cloud);
+}
+
+.visually-hidden {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
 }
