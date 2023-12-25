@@ -351,6 +351,9 @@ hr {
 	flex-direction: row;
 }
 
+.subscribe-label {
+	gap: 24px;
+}
 .input-form {
 	border: 1px solid white;
 	background-color: transparent;
