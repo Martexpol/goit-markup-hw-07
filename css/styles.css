@@ -819,6 +819,11 @@ hr {
 	margin-bottom: 4px;
 }
 
+.input-modal:hover,
+.input-modal:active {
+	border: 1px solid var(--iris);
+}
+
 .input-label {
 	font-size: 12px;
 	color: var(--light-slate);
@@ -871,10 +876,11 @@ hr {
 
 .input-container-modal {
 	color: var(--navy-blue);
-
 	display: inline-block;
 	align-content: center;
 	margin-left: 16px;
+	width: 100%;
+	position: relative;
 }
 .input-container-modal:hover,
 .input-container-modal:focus,
@@ -885,6 +891,9 @@ hr {
 
 .svg-modal {
 	fill: var(--navy-blue);
+	position: absolute;
+	top: 11px;
+	margin-left: 16px;
 }
 
 .input-container-modal:hover .svg-modal,
