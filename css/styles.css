@@ -892,8 +892,8 @@ hr {
 .svg-modal {
 	fill: var(--navy-blue);
 	position: absolute;
-	top: 11px;
-	margin-left: 16px;
+	top: 150%;
+	left: 16px;
 }
 
 .input-container-modal:hover .svg-modal,
