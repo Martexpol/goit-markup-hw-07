@@ -837,14 +837,23 @@ hr {
 	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	color: var(--navy-blue);
 }
+
 .input-modal:hover,
 .input-modal:active {
 	border: 1px solid var(--iris);
 }
 
+.input-box {
+	position: relative;
+}
+
 .input-label {
 	font-size: 12px;
 	color: var(--light-slate);
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	display: block;
+	margin-bottom: 4px;
 }
 
 .checkbox-modal {
