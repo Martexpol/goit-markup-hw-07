@@ -386,9 +386,9 @@ hr {
 .subscribe-btn:hover {
 	background-color: var(--ocean);
 }
-/* .svg-subscribe {
+.svg-subscribe {
 	margin-left: 16px;
-} */
+}
 
 /* index */
 .index-container {
