@@ -24,16 +24,16 @@
 						>Web<span class="logo-dark">Studio</span></a
 					>
 					<ul class="nav-list">
-						<li class="header-li">
+						<li>
 							<a href="./index.html" class="nav-link">Studio</a>
 						</li>
-						<li class="header-li">
+						<li>
 							<a href="./portfolio.html" class="nav-link nav-link-active"
 								>Portfolio
 								<hr class="active"
 							/></a>
 						</li>
-						<li class="header-li">
+						<li>
 							<a href="" class="nav-link">Contacts</a>
 						</li>
 					</ul>
@@ -312,19 +312,16 @@
 				</div>
 				<div class="footer-box">
 					<p class="footer-text-media">Subscribe</p>
-					<form
-						name="subscribe-form"
-						autocomplete="on"
-						novalidate
-						class="footer-form">
+					<form name="subscribe-form" autocomplete="on" class="footer-form">
 						<label for="subscribe-email" class="subscribe-label">
 							<input
+								class="input-form"
 								type="email"
 								name="email"
 								placeholder="E-mail"
-								class="input-form"
 								id="subscribe-email"
-								minlength="3" />
+								minlength="3"
+								required />
 						</label>
 						<button type="submit" class="subscribe-btn">
 							Subscribe

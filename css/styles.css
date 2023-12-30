@@ -114,11 +114,8 @@ img {
 
 .header-container {
 	border-bottom: 1px solid var(--cornflower);
-	height: 72px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-content: center;
+	/* height: 72px; */
+
 	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -127,6 +124,8 @@ img {
 	display: flex;
 	flex-direction: row;
 	gap: 332px;
+	justify-content: space-between;
+	align-content: center;
 }
 .header-li {
 	padding: 24px 0;
@@ -306,6 +305,9 @@ hr {
 	letter-spacing: 0.03em;
 	margin-left: 0;
 	padding: 0;
+}
+.logo:hover {
+	color: var(--ocean);
 }
 
 .logo-dark {

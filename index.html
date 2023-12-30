@@ -25,16 +25,16 @@
 						>Web<span class="logo-dark">Studio</span></a
 					>
 					<ul class="nav-list">
-						<li class="header-li">
+						<li>
 							<a href="./index.html" class="nav-link nav-link-active"
 								>Studio
 								<hr class="active" />
 							</a>
 						</li>
-						<li class="header-li">
+						<li>
 							<a href="./portfolio.html" class="nav-link">Portfolio</a>
 						</li>
-						<li class="header-li">
+						<li>
 							<a href="" class="nav-link">Contacts</a>
 						</li>
 					</ul>
@@ -434,17 +434,14 @@
 				<!-- subcribe form -->
 				<div class="footer-box">
 					<p class="footer-text-media">Subscribe</p>
-					<form
-						name="subscribe-form"
-						autocomplete="on"
-						novalidate
-						class="footer-form">
+					<form class="footer-form" name="subscribe-form" autocomplete="on">
 						<label for="subscribe-email" class="subscribe-label">
 							<input
+								class="input-form"
+								required
 								type="email"
 								name="email"
 								placeholder="E-mail"
-								class="input-form"
 								id="subscribe-email"
 								minlength="3" />
 						</label>
@@ -478,10 +475,10 @@
 						<label for="user-name" class="input-label">Name</label>
 						<div class="input-box">
 							<input
+								class="input-modal"
 								type="text"
 								name="user-name"
 								id="user-name"
-								class="input-modal"
 								required />
 							<svg width="18" height="24" class="svg-modal">
 								<use href="./images/icons.svg#icon-user"></use>
@@ -493,10 +490,10 @@
 						<label for="user-phone" class="input-label">Phone</label>
 						<div class="input-box">
 							<input
+								class="input-modal"
 								type="tel"
 								name="phone"
 								id="user-phone"
-								class="input-modal"
 								required />
 							<svg width="18" height="24" class="svg-modal">
 								<use href="./images/icons.svg#icon-phone"></use>
@@ -507,10 +504,10 @@
 						<label for="user-email" class="input-label">Email</label>
 						<div class="input-box">
 							<input
+								class="input-modal"
 								type="email"
 								name="email"
 								id="user-email"
-								class="input-modal"
 								required />
 							<svg width="18" height="24" class="svg-modal">
 								<use href="./images/icons.svg#icon-mail"></use>
