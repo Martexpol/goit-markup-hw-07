@@ -122,8 +122,6 @@ img {
 
 .header-alignment {
 	display: flex;
-	flex-direction: row;
-	gap: 332px;
 	justify-content: space-between;
 	align-content: center;
 }
