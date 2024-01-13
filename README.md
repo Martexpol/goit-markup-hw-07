@@ -1,4 +1,4 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-zadanie domowe 6 html+css
-https://github.com/Martexpol/goit-markup-hw-06
+zadanie domowe 7 html+css
+https://github.com/Martexpol/goit-markup-hw-07
