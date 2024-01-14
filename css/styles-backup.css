@@ -167,6 +167,7 @@ img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 76px;
 }
 
 .nav-list {
@@ -288,7 +289,6 @@ hr {
 	font-size: 18px;
 	line-height: 1.17;
 	letter-spacing: 0.03em;
-	margin-right: 76px;
 }
 
 .logo-light {
@@ -318,6 +318,11 @@ hr {
 .logo-display {
 	display: inline-block;
 }
+
+.logo .nav-box {
+	margin-right: 76px;
+}
+
 .footer-media {
 	gap: 16px;
 	display: flex;
