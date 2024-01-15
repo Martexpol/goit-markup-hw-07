@@ -77,7 +77,6 @@ img {
 	font-size: 18px;
 	line-height: 1.17;
 	letter-spacing: 0.03em;
-	/* margin-right: 76px; */
 }
 
 .logo:hover {
@@ -230,9 +229,6 @@ a .nav-link,
 	text-decoration: none;
 	color: var(--ocean);
 }
-/* .menu {
-	display: none;
-} */
 
 .index-container {
 	display: flex;
@@ -263,7 +259,19 @@ a .nav-link,
 	background-position: center;
 	width: 100vw;
 	height: 432px;
-	/* margin: 0 auto; */
+	margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+	.section-one {
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/peopleoffice@2x.jpg);
+	}
 }
 
 .header-one {
@@ -563,6 +571,10 @@ a .nav-link,
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.input-form::placeholder {
+	color: white;
+}
+
 .subscribe-btn {
 	width: 165px;
 	height: 40px;
@@ -858,6 +870,9 @@ a .nav-link,
 		max-width: 1158px;
 		height: 436px;
 	}
+	.logo {
+		margin-right: 120px;
+	}
 	.header-one {
 		font-weight: bold;
 		font-size: 56px;
@@ -909,11 +924,31 @@ a .nav-link,
 		width: 408px;
 	}
 }
+@media screen and (min-width: 767px) and (max-width: 1157px) {
+	.address-list {
+		flex-direction: column;
+		justify-content: center;
+		gap: 12px;
+	}
+	.header-li {
+		padding: 0;
+		font-size: 12px;
+		line-height: 1.16;
+	}
+	.address-link {
+		font-size: 12px;
+		line-height: 1.16;
+	}
+}
+
 @media screen and (min-width: 1158px) {
 	.menu {
 		display: flex;
 	}
 
+	.logo {
+		margin-right: 76px;
+	}
 	.section-three {
 		display: flex;
 	}
@@ -924,6 +959,8 @@ a .nav-link,
 		min-width: 1158px;
 		max-width: 1440px;
 		height: 600px;
+		box-shadow: 0 4px 4px 0 #2e2f4214, 0 4px 4px 0 #2e2f4229,
+			0 4px 4px 0 #2e2f4214;
 	}
 	.solutions-container {
 		height: 600px;
@@ -950,6 +987,7 @@ a .nav-link,
 	}
 	.sec-two-card {
 		width: 264px;
+		margin: 0;
 	}
 	.header-three-index {
 		font-weight: 500;
@@ -982,7 +1020,7 @@ a .nav-link,
 	}
 }
 
-/* mobile menu ================== */
+/* mobile menu =========================================================== */
 
 .menu {
 	display: flex;
