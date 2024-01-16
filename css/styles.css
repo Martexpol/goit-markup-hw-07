@@ -256,13 +256,48 @@ a .nav-link,
 			rgba(46, 47, 66, 0.7),
 			rgba(46, 47, 66, 0.7)
 		),
-		url(../images/peopleoffice-432h@1x.jpg);
+		url(../images/peopleoffice-428x432@1x.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	width: 100vw;
 	height: 432px;
 	margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+	.section-one {
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/peopleoffice-428x432@2x.jpg);
+	}
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+	(min-resolution: 192dpi) and (min-width: 768px),
+	(min-resolution: 2dppx) and (min-width: 768px) {
+	.section-one {
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/peopleoffice-436h@2x.jpg);
+	}
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1158px),
+	(min-resolution: 192dpi) and (min-width: 1158px),
+	(min-resolution: 2dppx) and (min-width: 1158px) {
+	.section-one {
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/peopleoffice-600h@2x.jpg);
+	}
 }
 
 .header-one {
@@ -837,7 +872,7 @@ a .nav-link,
 
 @media screen and (min-width: 320px) {
 	.container {
-		overflow-x: hidden;
+		overflow-y: hidden;
 	}
 }
 
@@ -1094,8 +1129,9 @@ a .nav-link,
 
 .menu-container .menu-toggle {
 	position: absolute;
-	top: 16px;
-	right: 16px;
+	top: 40px;
+	right: 40px;
+
 	color: var(--navy-blue);
 }
 
