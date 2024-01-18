@@ -59,7 +59,7 @@ img {
 
 /* general block */
 .container {
-	max-width: 480px;
+	max-width: 420px;
 	align-self: center;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -788,7 +788,9 @@ a .nav-link,
 	margin-bottom: 8px;
 }
 .portfolio-sec {
-	padding: 96px 0 120px 0;
+	max-width: 480px;
+
+	padding: 48px auto;
 }
 
 .portfolio-container-cards {
@@ -851,11 +853,12 @@ a .nav-link,
 }
 
 .portfolio-container-buttons {
+	max-width: 396px;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-
-	gap: 24px;
+	justify-content: left;
+	flex-wrap: wrap;
+	column-gap: 16px;
 	margin-bottom: 72px;
 }
 
@@ -1197,6 +1200,7 @@ a .nav-link,
 		width: 408px;
 	}
 	.portfolio-sec {
+		max-width: 736px;
 		padding: 0 0 96px 0;
 	}
 	.img-portfolio {
@@ -1227,13 +1231,13 @@ a .nav-link,
 	.portfolio-container-buttons {
 		display: flex;
 		justify-content: center;
-		width: 586px;
+		max-width: 768px;
 		gap: 24px;
 		margin-bottom: 72px;
 		margin: 0 auto;
 	}
 	.menu-button {
-		margin: 64px 0;
+		margin: 64px auto;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1158px) {
