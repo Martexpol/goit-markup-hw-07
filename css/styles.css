@@ -801,14 +801,18 @@ a .nav-link,
 }
 
 .portfolio-card {
-	width: 400px;
+	width: 396px;
+	height: 400px;
+	margin: auto;
 	padding: 0 auto;
 }
 .portfolio-card-img {
 	position: relative;
 	overflow: hidden;
 	width: 396px;
-	height: 400px;
+}
+.img-portfolio {
+	width: 100%;
 }
 
 .portfolio-card-p {
