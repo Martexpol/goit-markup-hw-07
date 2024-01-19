@@ -789,7 +789,7 @@ a .nav-link,
 }
 .portfolio-sec {
 	max-width: 480px;
-
+	margin: 0 auto;
 	padding: 48px auto;
 }
 
@@ -860,6 +860,7 @@ a .nav-link,
 	flex-wrap: wrap;
 	column-gap: 16px;
 	margin-bottom: 72px;
+	margin-top: 48px;
 }
 
 .link-block {
@@ -1378,7 +1379,9 @@ a .nav-link,
 		width: 360px;
 		height: 300px;
 	}
-
+	.portfolio-sec {
+		max-width: 1128px;
+	}
 	.portfolio-container-cards {
 		width: 1128px;
 		display: flex;
