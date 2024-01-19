@@ -101,10 +101,9 @@ img {
 	align-self: center;
 }
 
-/* header */
+/* header =============================================================*/
 
 .header-container {
-	/* border-bottom: 1px solid var(--cornflower); */
 	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 	min-height: 70px;
@@ -119,7 +118,7 @@ img {
 }
 
 .header-li {
-	padding: auto;
+	padding: 20px 0;
 }
 
 .nav-container {
@@ -261,8 +260,8 @@ a .nav-link,
 	background-size: cover;
 	background-position: center;
 	width: 100%;
-	height: 432px;
 	margin: 0 auto;
+	padding: 112px 0;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -303,13 +302,11 @@ a .nav-link,
 
 .header-one {
 	font-weight: bold;
-	padding: 0 10px;
 	font-size: 36px;
 	line-height: 1.11;
 	align-self: center;
 	text-align: center;
 	letter-spacing: 0.02em;
-	margin-top: 112px;
 	max-width: 320px;
 }
 .single-button {
@@ -321,7 +318,7 @@ a .nav-link,
 	cursor: pointer;
 	background-color: var(--iris);
 	padding: 16px 32px;
-	margin: 72px;
+	margin: 72px auto 0;
 	color: white;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	align-self: center;
@@ -629,16 +626,10 @@ a .nav-link,
 /* mobile menu =========================================================== */
 
 .menu {
-	display: flex;
+	display: none;
 	padding: 0;
 	margin: 0;
 	list-style: none;
-}
-
-@media (max-width: 768px) {
-	.menu {
-		display: none;
-	}
 }
 
 .menu-toggle {
@@ -654,11 +645,6 @@ a .nav-link,
 	outline: none;
 }
 
-@media (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-}
 .menu-button-x {
 	border: 1px solid var(--cornflower);
 	border-radius: 50%;
@@ -873,7 +859,6 @@ a .nav-link,
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
 /* modal ======================================================*/
 .backdrop {
 	display: flex;
@@ -888,7 +873,6 @@ a .nav-link,
 	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal {
 	position: absolute;
 	width: 90%;
@@ -908,7 +892,6 @@ a .nav-link,
 	flex-direction: column;
 	padding: 72px 24px 24px 24px;
 }
-
 .button-x {
 	width: 24px;
 	height: 24px;
@@ -925,27 +908,22 @@ a .nav-link,
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .button-x:focus {
 	background-color: var(--ocean);
 	border: none;
 }
-
 .is-hidden {
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
 }
-
 .svg-x {
 	fill: var(--navy-blue);
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .button-x:focus .svg-x {
 	fill: #ffffff;
 }
-
 .header-modal {
 	color: var(--navy-blue);
 	align-self: center;
@@ -955,7 +933,6 @@ a .nav-link,
 	text-align: center;
 	margin-bottom: 16px;
 }
-
 .form-modal {
 	width: 100%;
 }
@@ -1113,12 +1090,6 @@ a .nav-link,
 
 /* ============================================================================= */
 
-@media screen and (min-width: 320px) {
-	/* .container {
-		overflow-x: hidden;
-	} */
-}
-
 @media screen and (min-width: 768px) {
 	.container {
 		max-width: 768px;
@@ -1133,9 +1104,7 @@ a .nav-link,
 		row-gap: 72px;
 	}
 	.section-one {
-		min-width: 768px;
 		max-width: 1158px;
-		height: 436px;
 		background-image: linear-gradient(
 				rgba(46, 47, 66, 0.7),
 				rgba(46, 47, 66, 0.7)
@@ -1240,6 +1209,12 @@ a .nav-link,
 	.menu-button {
 		margin: 64px auto;
 	}
+	.menu {
+		display: flex;
+	}
+	.menu-toggle {
+		display: none;
+	}
 }
 @media screen and (min-width: 768px) and (max-width: 1158px) {
 	.address-list {
@@ -1259,10 +1234,6 @@ a .nav-link,
 }
 
 @media screen and (min-width: 1158px) {
-	.menu {
-		display: flex;
-	}
-
 	.logo {
 		margin-right: 76px;
 	}
@@ -1277,7 +1248,7 @@ a .nav-link,
 	}
 	.section-one {
 		max-width: 1440px;
-		height: 600px;
+		padding: 188px 0;
 		box-shadow: 0 4px 4px 0 #2e2f4214, 0 4px 4px 0 #2e2f4229,
 			0 4px 4px 0 #2e2f4214;
 		background-image: linear-gradient(
@@ -1286,12 +1257,7 @@ a .nav-link,
 			),
 			url(../images/peopleoffice-600h@1x.jpg);
 	}
-	.solutions-container {
-		height: 600px;
-	}
-	.header-one {
-		margin-top: 188px;
-	}
+
 	.icon-wrapper {
 		background-color: var(--cloud);
 		padding-block: 24px;
